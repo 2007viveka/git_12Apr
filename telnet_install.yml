@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+     - name: Remove telnet package
+       package:
+          name: telnet
+          state: absent
+
