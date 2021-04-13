@@ -4,5 +4,5 @@
      - name: Remove telnet package
        package:
           name: telnet
-          state: present 
+          state: absent 
 
