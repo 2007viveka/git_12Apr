@@ -1,8 +1,11 @@
 ---
 - hosts: all
   tasks:
-     - name: Remove telnet package
+     - name: Install telnet package
        package:
           name: telnet
-          state: absent
+          state: present 
 
+     - name: Show messgae telnet
+       debug:
+         msg: "Show messgae telnet"
